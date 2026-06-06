@@ -1,0 +1,10 @@
+# Netlify CLI configuration
+# Auto-publish from this site
+# Run: netlify deploy --prod
+
+[build]
+  command = "npm run build"
+  publish = "_site"
+
+[context.production]
+  environment = { NETLIFY = "true" }

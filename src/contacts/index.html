@@ -1,0 +1,30 @@
+---
+title: Контакты
+---
+<!DOCTYPE html><html lang="ru"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0"><title>{{ title }} | ФОНД "ТЕХНОЛОГИЧЕСКОМУ ИНСТИТУТУ-200 ЛЕТ"</title><link rel="stylesheet" href="/spbgti/css/style.css"></head><body>{% include "header.html" %}
+<div class="page-banner"><div class="container"><h1>Контакты</h1><p>Свяжитесь с нами любым удобным способом</p></div></div>
+<div class="container"><div class="main-layout">
+<aside class="sidebar sidebar-left"><div class="sidebar-widget"><h3>Навигация</h3><div id="sidebar-nav"></div></div></aside>
+<main class="center-content">
+<div class="content-section"><h2>Связаться с фондом</h2><p>Вы можете отправить нам сообщение или предложить новость для публикации.</p>
+<form action="https://formsubmit.co/mbrumina@rambler.ru" method="POST" style="margin-top:24px">
+<input type="hidden" name="_subject" value="Новость с сайта фонда"><input type="hidden" name="_next" value="https://spbgti.netlify.app/contacts/?sent=1">
+<div style="margin-bottom:16px"><label style="display:block;margin-bottom:6px;font-weight:600">Ваше имя</label><input type="text" name="name" required placeholder="Иван Иванов" style="width:100%;padding:12px;border:1px solid var(--border);border-radius:8px;font-size:1rem"></div>
+<div style="margin-bottom:16px"><label style="display:block;margin-bottom:6px;font-weight:600">Email</label><input type="email" name="email" required placeholder="email@example.com" style="width:100%;padding:12px;border:1px solid var(--border);border-radius:8px;font-size:1rem"></div>
+<div style="margin-bottom:16px"><label style="display:block;margin-bottom:6px;font-weight:600">Тип обращения</label>
+<select name="type" style="width:100%;padding:12px;border:1px solid var(--border);border-radius:8px;font-size:1rem">
+<option value="news">Предложить новость</option><option value="question">Вопрос</option><option value="partner">Партнёрство</option><option value="other">Другое</option>
+</select></div>
+<div style="margin-bottom:16px"><label style="display:block;margin-bottom:6px;font-weight:600">Сообщение</label><textarea name="message" rows="5" required placeholder="Текст новости или сообщения..." style="width:100%;padding:12px;border:1px solid var(--border);border-radius:8px;font-size:1rem;resize:vertical"></textarea></div>
+<button type="submit" style="width:100%;padding:14px;background:var(--accent);color:var(--primary);border:none;border-radius:8px;font-weight:600;font-size:1rem;cursor:pointer">Отправить</button>
+</form></div></main>
+<aside class="sidebar sidebar-right">
+<div class="sidebar-widget"><h3>Контакты</h3><ul class="contacts-list">
+<li><span class="label">Email</span><span class="value">mbrumina@rambler.ru</span></li>
+<li><span class="label">Телефон</span><span class="value">+7 (812) XXX-XX-XX</span></li>
+<li><span class="label">Адрес</span><span class="value">ул. Большая Морская, д. 3-5, Санкт-Петербург</span></li>
+</ul></div>
+<div class="sidebar-widget"><h3>ИНН фонда</h3><p style="font-family:monospace;font-size:1.1rem;color:var(--primary)">7841041417</p></div>
+</aside>
+</div></div>
+{% include "footer.html" %}<script src="/spbgti/js/main.js"></script></body></html>

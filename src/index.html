@@ -1,0 +1,139 @@
+---
+title: Главная
+---
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>{{ title }} | ФОНД "ТЕХНОЛОГИЧЕСКОМУ ИНСТИТУТУ-200 ЛЕТ"</title>
+<link rel="stylesheet" href="/spbgti/css/style.css">
+</head>
+<body>
+
+{% include "header.html" %}
+
+<div class="hero">
+  <div class="hero-bg" style="background-image: url('/spbgti/img/photo_2026-05-17.jpeg');"></div>
+  <div class="hero-content container">
+    <div class="text-box">
+      <h1>ФОНД "ТЕХНОЛОГИЧЕСКОМУ ИНСТИТУТУ-200 ЛЕТ"</h1>
+      <p class="hero-subtitle">К 200-летию Санкт-Петербургского<br>Технологического Института<br><span class="hero-years">(1828-2028)</span></p>
+      <div class="countdown" data-target="2028-11-28T12:00:00+03:00">
+        <div class="countdown-item"><span class="number" id="countdown-days">--</span><span class="label">Дней</span></div>
+        <div class="countdown-item"><span class="number" id="countdown-hours">--</span><span class="label">Часов</span></div>
+        <div class="countdown-item"><span class="number" id="countdown-minutes">--</span><span class="label">Минут</span></div>
+        <div class="countdown-item"><span class="number" id="countdown-seconds">--</span><span class="label">Секунд</span></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="main-layout">
+    <aside class="sidebar sidebar-left">
+      <div class="sidebar-widget">
+        <h3>Навигация</h3>
+        <div id="sidebar-nav"></div>
+      </div>
+      <div class="sidebar-widget">
+        <h3>Ключевые цифры</h3>
+        <div class="stats-widget">
+          <div class="stat"><span class="stat-value">10</span><span class="stat-label">Инициатив</span></div>
+          <div class="stat"><span class="stat-value">25</span><span class="stat-label">Стипендиатов</span></div>
+          <div class="stat"><span class="stat-value">200+</span><span class="stat-label">Участников</span></div>
+          <div class="stat"><span class="stat-value">2016</span><span class="stat-label">Год создания</span></div>
+        </div>
+      </div>
+    </aside>
+
+    <main class="center-content">
+      <div class="content-section">
+        <h2>Последние новости</h2>
+        <a href="/spbgti/news/pages/site-launch/" class="news-card">
+          <div class="news-text">
+            <span class="date">8 мая 2026</span>
+            <h4>Запущен обновлённый сайт фонда</h4>
+            <p>ФОНД "ТЕХНОЛОГИЧЕСКОМУ ИНСТИТУТУ-200 ЛЕТ" представляет обновлённый портал.</p>
+          </div>
+          <div class="news-thumb">Фото</div>
+        </a>
+        <a href="/spbgti/news/pages/strategy-session/" class="news-card">
+          <div class="news-text">
+            <span class="date">12 марта 2026</span>
+            <h4>Стратегическая сессия с выпускниками</h4>
+            <p>Утверждена дорожная карта трансформации фонда в инвестиционный к 2028 году.</p>
+          </div>
+          <div class="news-thumb">Фото</div>
+        </a>
+        <a href="/spbgti/news/pages/scholarship-2025/" class="news-card">
+          <div class="news-text">
+            <span class="date">20 декабря 2025</span>
+            <h4>Итоги стипендиальной программы 2025</h4>
+            <p>Стипендии фонда получили 5 студентов института.</p>
+          </div>
+          <div class="news-thumb">Фото</div>
+        </a>
+        <a href="/spbgti/news/pages/proposals-2024/" class="news-card">
+          <div class="news-text">
+            <span class="date">15 декабря 2024</span>
+            <h4>Открыт сбор предложений к 200-летию</h4>
+            <p>Сбор идей и проектов от студентов к юбилею института.</p>
+          </div>
+          <div class="news-thumb">Фото</div>
+        </a>
+        <a href="/spbgti/news/pages/techchallenge-2024/" class="news-card">
+          <div class="news-text">
+            <span class="date">1 марта 2024</span>
+            <h4>TechChallenge 2024: итоги</h4>
+            <p>Более 60 участников, 12 проектов, гранты победителям.</p>
+          </div>
+          <div class="news-thumb">Фото</div>
+        </a>
+      </div>
+
+      <div class="content-section">
+        <h2>Инициативы фонда</h2>
+        <div class="initiative-item">
+          <span class="tag">В ПРОЦЕССЕ</span>
+          <h4><a href="#">Приём предложений от студентов</a></h4>
+          <p>Сбор идей и проектов к 200-летию института</p>
+        </div>
+        <div class="initiative-item">
+          <span class="tag">В ПРОЦЕССЕ</span>
+          <h4><a href="#">Формирование Совета выпускников</a></h4>
+          <p>Создание попечительского совета из выпускников института</p>
+        </div>
+        <div class="initiative-item">
+          <span class="tag">ЗАПЛАНИРОВАНО</span>
+          <h4><a href="#">Предюбилейная конференция выпускников 2027</a></h4>
+          <p>Масштабное собрание выпускников со всего мира</p>
+        </div>
+      </div>
+    </main>
+
+    <aside class="sidebar sidebar-right">
+      <div class="sidebar-widget" style="padding:0;overflow:hidden">
+        <a href="https://spbti.ru/" target="_blank" style="display:block">
+          <img src="/spbgti/img/spbti_logo_COLOR.png" alt="Санкт-Петербургский технологический институт" style="width:100%;display:block;padding:20px">
+          <div style="padding:10px 14px;font-size:0.8rem;color:var(--text-muted);text-align:center">Санкт-Петербургский государственный технологический институт &rarr;</div>
+        </a>
+      </div>
+      <div class="sidebar-widget">
+        <h3>Контакты</h3>
+        <ul class="contacts-list">
+          <li><span class="label">ИНН</span><span class="value">7841041417</span></li>
+          <li><span class="label">ОГРН</span><span class="value">1167800052826</span></li>
+          <li><span class="label">Email</span><span class="value">mbrumina@rambler.ru</span></li>
+          <li><span class="label">Телефон</span><span class="value">+7 (812) XXX-XX-XX</span></li>
+        </ul>
+      </div>
+    </aside>
+  </div>
+</div>
+
+{% include "footer.html" %}
+
+<script src="/spbgti/js/main.js"></script>
+</body>
+</html>
